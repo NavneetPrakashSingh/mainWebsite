@@ -11,7 +11,9 @@ export class EmployeeComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('http://localhost:8080/hello',{responseType:'text'}).subscribe(res=>{
+    // production link: https://makemetechieapi.herokuapp.com/hello
+    // development link: http://localhost:8080/hello
+    this.http.get('https://makemetechieapi.herokuapp.com/hello',{responseType:'text'}).subscribe(res=>{
       alert(res);
     })
   }
