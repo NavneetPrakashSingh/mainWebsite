@@ -1,0 +1,13 @@
+.post-border{
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    min-height: 20px;
+    padding: 19px;
+    text-align: center;
+    margin: 10px;
+}
+.removing-margin-row{
+    margin-left: 0px;
+    margin-right: 0px;
+}

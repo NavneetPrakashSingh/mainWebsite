@@ -6,20 +6,27 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 
 import {HttpClientModule} from '@angular/common/http';
-
+import { HomeComponent } from './Home/Home.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
    declarations: [
       AppComponent,
-      EmployeeComponent
+      EmployeeComponent,
+      HomeComponent,
+      SidebarComponent,
+      NavbarComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      HttpClientModule
+      HttpClientModule,
+      NgbModule
    ],
    providers: [],
    bootstrap: [
-      AppComponent
+      AppComponent,
    ]
 })
 export class AppModule { }
