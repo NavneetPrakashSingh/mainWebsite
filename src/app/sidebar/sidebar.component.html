@@ -8,24 +8,15 @@
         <img class="main-logo" src="https://makemetechie.com/wp-content/themes/twentyseventeen/img/svg/mainlogo.png" alt="">
         <div>Make Me Techie</div>
       </div>
-
-      <!-- <ul class="list-unstyled components">
-          <p>Pharmacist Dashboard</p>
-          <li>
-              <a routerLink="dashboard" >Dashboard</a>
+      
+      <ul class="list-unstyled components">
+          <li *ngFor="let categoryResult of categories">
+              
+              <a routerLink="{{categoryResult.link}}"><i class="fa fa-asterisk"></i>&nbsp;{{categoryResult.category}}</a>
           </li>
-          <li>
-              <a routerLink="order">Orders</a>
-          </li>
-          <li>
-              <a routerLink="inventory">Inventory</a>
-          </li>
-          <li>
-              <a routerLink="user">Users</a>
-          </li>
-      </ul> -->
-      <i class="fa fa-certificate"></i>
-      <i class="fa fa-asterisk"></i>
+      </ul>
+      
+      
   </nav>
 
   <!-- Page Content Holder -->

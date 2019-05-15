@@ -1,11 +1,14 @@
 <div>
   <div class="row removing-margin-row">
-    <div class="col-sm post-border">
-      One of three columns
-    </div>
-    <div class="col-sm post-border">
-      One of three columns
-    </div>
-    
+    <div *ngFor="let postData of postCollection" class="col-sm col-md col-lg-6 post-border">
+      <h3><span>{{postData.postTitle}}</span></h3>      
+      <div>
+          <span>{{postData.author}}</span>
+          <span>{{postData.date}}</span>
+      </div>      
+      <div>
+          <img class="post-image" src="{{postData.postImage}}">
+      </div>
+    </div>    
   </div>
 </div>

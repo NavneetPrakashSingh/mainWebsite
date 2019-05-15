@@ -10,9 +10,11 @@ export class SidebarComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
+  public categories:any;
   ngOnInit() {
-    this.http.get('https://api.myjson.com/bins/qus5i',{responseType:'text'}).subscribe(res=>{
-      alert(res);
+    this.http.get('https://api.myjson.com/bins/yiv72',{responseType:'text'}).subscribe(res=>{
+      var obj = JSON.parse(res);
+      this.categories = obj.categories;
     })
   }
 
